@@ -2,6 +2,10 @@ console.log("web serverni boshlash");
 const express = require ("express");
 const app = express();
 const http = require ("http");
+const fs = require ("fs");
+
+const userData = fs.readFileSync("database/user.json", "utf-8");
+const user = JSON.parse(userData);
 
 // 1: Kirish code
 
@@ -21,7 +25,11 @@ app.post("/create", (req , res) => {
 });
 
 app.get("/", function (req , res) {
-    res.render("harid");
+    res.render("about");
+});
+
+app.get("/author", (req , res) => {
+    res.render("author", { user });
 });
 
 
