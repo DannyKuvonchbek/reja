@@ -4,10 +4,11 @@
   "description": "\"bu mening birinchi loyiham\",",
   "main": "server.js",
   "scripts": {
-    "dev":   "nodemon server.js",
-    "train": "nodemon './dars mashqlari /train.js'",
+    "dev": "nodemon server.js",
+    "train": "nodemon train.js",
+    "reja": "nodemon reja.js",
     "start": "node server.js",
-    "test":  "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DANNY",
   "license": "MIT",

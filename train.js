@@ -43,7 +43,7 @@ function maslahatBering(a, callback) {
         callback(null, list[5]);
        }, 1000);
     }
-}
+} 
 
 console.log("passed here 0");
 maslahatBering(65, (err, data) => {

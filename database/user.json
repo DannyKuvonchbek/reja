@@ -1,9 +1,9 @@
  {
     "name": "DANNY",
     "profession": "Software Engineer",
-    "age": 29, 
+    "age": 29,
     "residence": "S. Korea",
-    "address": " S. Korea Vonju",
+    "address": "S. Korea Vonju",
     "language": ["Uzbek", "Korean"],
     "skills": ["Html", "Css", "Js", "NodeJs", "Python"],
     "extra_skills": ["Bootstrap", "Materialize", "Styling", "Sass", "Django", "Flask", "GIT Knowledge"],
@@ -12,9 +12,9 @@
     "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "city": "Vonju",
     "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
-    "flower_desc":  ["What is a flower?", "What is aSeedling? ", "Who is Gardner?", "What is Old?", "What is New?"],
-    "flower_name":  ["Tulip", "Daffodil", "Poppy", "Sunflower", "Rose"],
+    "flower_desc": ["What is a flower?", "What is aSeedling? ", "Who is Gardner?", "What is Old?", "What is New?"],
+    "flower_name": ["Tulip", "Daffodil", "Poppy", "Sunflower", "Rose"],
     "flower_price": ["15$", "25$", "12$", "20$", "35$"],
     "famous_words": ["world is Beautiful with  Flowers"],
     "famous_name": ["Steve Jobs"]
- }
+}
