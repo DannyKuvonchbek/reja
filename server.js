@@ -1,8 +1,8 @@
 const http = require ("http");
 const mongodb = require ("mongodb");
 
-let db;
-const connectionString = "mongodb://atlas-sql-69ed9d7f82298cbf7d69b8bf-ipi3pi.a.query.mongodb.net/Reja?ssl=true&authSource=admin";
+
+const connectionString = "mongodb+srv://DANNY_MIT:GTgTJ9e16NKt0ISD@cluster0.sc6tsmn.mongodb.net/Reja?appName=Cluster0";
 
 mongodb.connect(connectionString, 
 {
@@ -13,6 +13,7 @@ mongodb.connect(connectionString,
     if (err) console.log("ERROR on connection MongoDB");
     else {
     console.log("MongoDB connected successfully"); 
+    module.exports = client;
     //console.log(client);   
     const app = require ("./app");
     const server = http.createServer(app);
@@ -25,6 +26,8 @@ mongodb.connect(connectionString,
     }   
   }
 );
+
+
 
 
 
