@@ -1,3 +1,18 @@
+// B-TASK: ad2a54y79wet0sfgb9
+
+function countDigits(matn) {
+    let sonlarSoni = 0;
+    for (let i = 0; i < matn.length; i++) {
+        let harf = matn[i];
+        if (harf >= '0' && harf <= '9') {
+            sonlarSoni++;
+        }
+    }
+    return sonlarSoni;
+}
+
+console.log(countDigits("ad2a54y79wet0sfgb9"));
+
 // A-TASK: executed
 
 /*
@@ -16,6 +31,8 @@ console.log(countLetter("e", "executed"));
 */
 
 //  Callback function
+
+/*
 
 console.log("Jack Ma maslahatlari");
 const list = [
