@@ -3,7 +3,13 @@ console.log("Server is starting...");
 
 const express = require("express");
 const app = express();
+const fs = require('fs');
 
+let user;
+ fs.readFile("database/user.json", "utf8", (err, data) => {
+     if(err) log("ERROR:", err);
+     else user = JSON.parse(data);
+})
 
 
 // MongoDB connect 
@@ -53,6 +59,11 @@ app.get("/", function (req, res) {
         }
     })
 });
+
+app.get('/author', (req, res) => {
+     res.render("author", {user: user})
+ })
+
 
 app.post("/delete-item", (req, res) => {
     const item = req.body.item;

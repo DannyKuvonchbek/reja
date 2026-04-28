@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "nodemon server.js",
     "train": "nodemon train.js",
-    "reja": "nodemon reja.js",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
