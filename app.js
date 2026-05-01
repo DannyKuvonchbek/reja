@@ -14,7 +14,7 @@ let user;
 
 // MongoDB connect 
 const db = require("./server").db();
-
+const mongodb = require("mongodb");
 
 // 1: Kirish code
 app.use(express.static("public"));
@@ -31,14 +31,22 @@ app.post("/create-item", (req, res) => {
    console.log(req.body);
    const new_reja = req.body.reja;
    db.collection("plans").insertOne({ reja: new_reja},(err,data) => {
-    if(err) {
-        console.log("somethin went wrong");
-    } else {
-        res.end("successfully added");
-    }
+    console.log(data.ops);
+    res.json(data.ops[0]);
    });
 });
 
+app.post("/delete-item", (req, res) => {
+    const id = req.body.id;
+    console.log(id);
+    res.end("done");
+    db.collection("plans").deleteOne(
+        {_id:new mongodb.ObjectId(id)},
+        (err,data) => {
+    res.json({ state: "success" });
+    } 
+  );
+});
 
 app.post("/delete-all", (req, res) => {
     rejaList = [];

@@ -1,5 +1,51 @@
+// C-TACK
+class Shop {
+    constructor(non, lagmon, cola) {
+        this.non = non;
+        this.lagmon = lagmon;
+        this.cola = cola;
+    }
+
+    qoldiq(vaqt) {
+        console.log(`Hozir ${vaqt}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud`);
+    }
+
+    sotish(mahsulot, miqdor) {
+        if (mahsulot === "non") {
+            this.non -= miqdor;
+        } else if (mahsulot === "lag'mon" || mahsulot === "lagmon") {
+            this.lagmon -= miqdor;
+        } else if (mahsulot === "cola") {
+            this.cola -= miqdor;
+        }
+
+        console.log(`${mahsulot}dan ${miqdor}ta sotildi`);
+    }
+
+    qabul(mahsulot, miqdor) {
+        if (mahsulot === "non") {
+            this.non += miqdor;
+        } else if (mahsulot === "lag'mon" || mahsulot === "lagmon") {
+            this.lagmon += miqdor;
+        } else if (mahsulot === "cola") {
+            this.cola += miqdor;
+        }
+
+        console.log(`${mahsulot}dan ${miqdor}ta qabul qilindi`);
+      
+    }
+}
+
+const shop = new Shop(4, 5, 2);
+
+shop.qoldiq("20:40");
+shop.sotish("non", 3);
+shop.qabul("cola", 4);
+shop.qoldiq("20:50");
+
 // B-TASK: ad2a54y79wet0sfgb9
 
+/*
 function countDigits(matn) {
     let sonlarSoni = 0;
     for (let i = 0; i < matn.length; i++) {
@@ -12,6 +58,7 @@ function countDigits(matn) {
 }
 
 console.log(countDigits("ad2a54y79wet0sfgb9"));
+*/
 
 // A-TASK: executed
 
