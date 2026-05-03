@@ -28,7 +28,7 @@ app.set("view engine", "ejs");
 // 4 Routing code
 
 app.post("/create-item", (req, res) => {
-   console.log(req.body);
+   console.log("/user entered /create-item");
    const new_reja = req.body.reja;
    db.collection("plans").insertOne({ reja: new_reja},(err,data) => {
     console.log(data.ops);
@@ -39,7 +39,6 @@ app.post("/create-item", (req, res) => {
 app.post("/delete-item", (req, res) => {
     const id = req.body.id;
     console.log(id);
-    res.end("done");
     db.collection("plans").deleteOne(
         {_id:new mongodb.ObjectId(id)},
         (err,data) => {
@@ -52,6 +51,8 @@ app.post("/delete-all", (req, res) => {
     rejaList = [];
     res.render("reja", { user: user, rejaList: rejaList });
 });
+
+
 
 app.get("/", function (req, res) {
     console.log("user entered /create-item");
@@ -72,12 +73,13 @@ app.get('/author', (req, res) => {
      res.render("author", {user: user})
  })
 
-
+/*
 app.post("/delete-item", (req, res) => {
     const item = req.body.item;
     rejaList = rejaList.filter(i => i !== item);
     res.render("reja", { user: user, rejaList: rejaList });
 });
+*/
 
 module.exports = app;
 
