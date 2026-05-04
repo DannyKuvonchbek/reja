@@ -1,4 +1,21 @@
+// D-TASK
+
+function checkContent(str1, str2) {
+
+    let roll1 = "";
+    for (let i = str1.length - 1; i >= 0; i--) {
+        roll1 += str1[i];
+    }
+    
+    return roll1 === str2;
+}
+
+console.log(checkContent("mitgroup", "puorgtim"));
+console.log(checkContent("mitgroup", "gmtiprou"));
+
 // C-TACK
+
+/*
 class Shop {
     constructor(non, lagmon, cola) {
         this.non = non;
@@ -42,6 +59,7 @@ shop.qoldiq("20:40");
 shop.sotish("non", 3);
 shop.qabul("cola", 4);
 shop.qoldiq("20:50");
+*/
 
 // B-TASK: ad2a54y79wet0sfgb9
 
