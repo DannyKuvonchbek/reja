@@ -1,5 +1,20 @@
+// E-TASK
+function getReverse(str) {
+    let reversed = "";
+    
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+
+    return reversed;
+}
+
+console.log(getReverse("hello"));
+
+
 // D-TASK
 
+/*
 function checkContent(str1, str2) {
 
     let roll1 = "";
@@ -12,6 +27,7 @@ function checkContent(str1, str2) {
 
 console.log(checkContent("mitgroup", "puorgtim"));
 console.log(checkContent("mitgroup", "gmtiprou"));
+*/
 
 // C-TACK
 
