@@ -1,4 +1,24 @@
+
+// F-TASK
+function findDoublers(str) {
+    let seen = {};
+
+    for (let i = 0; i < str.length; i++) {
+        let harf = str[i];
+
+        if (seen[harf]) {
+            return true;
+        }
+
+        seen[harf] = true;
+    }
+
+    return false;
+}
+console.log(findDoublers("hello"));
+
 // E-TASK
+/*
 function getReverse(str) {
     let reversed = "";
     
@@ -7,10 +27,10 @@ function getReverse(str) {
     }
 
     return reversed;
-}
+} 
 
 console.log(getReverse("hello"));
-
+*/
 
 // D-TASK
 
