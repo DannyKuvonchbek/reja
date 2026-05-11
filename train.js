@@ -1,4 +1,22 @@
+// G-TASK
+numbers=[5, 21, 12, 21, 8];
 
+function getHighestIndex(nums) {
+    HighestIndex=0
+    numbers=nums[0]
+    for(let i in nums) {
+        if(nums[i]>numbers) {
+            HighestIndex = i
+            numbers=nums[i]
+        }
+    }
+    return HighestIndex
+} 
+
+
+console.log(getHighestIndex(numbers)); 
+
+/*
 // F-TASK
 function findDoublers(str) {
     let seen = {};
@@ -16,6 +34,7 @@ function findDoublers(str) {
     return false;
 }
 console.log(findDoublers("hello"));
+*/
 
 // E-TASK
 /*
