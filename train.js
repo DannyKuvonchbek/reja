@@ -1,3 +1,24 @@
+// I-TASK
+let numbers = [1, 2, 3, 4, 5, 4, 3, 4];
+
+function majorityElement(arr) {
+    let count = {};
+    let maxCount = 0;
+
+    for (let num of arr) {
+        count[num] = (count[num] || 0) + 1;
+        if (count[num] > maxCount) {
+            maxCount = count[num];
+            majority = num;
+        }
+    }
+
+    return majority;
+}
+
+    console.log(majorityElement(numbers)); 
+
+/*
 // H-TASK
 function getPositive(arr) {
   let result = '';             
@@ -10,6 +31,7 @@ function getPositive(arr) {
 }
 
 console.log(getPositive([1, -4, 2])); 
+/*
 /*
 // G-TASK
 numbers=[5, 21, 12, 21, 8];
